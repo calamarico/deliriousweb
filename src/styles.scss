@@ -1,17 +1,28 @@
 @import './assets/_mixins';
 @import './assets/fonts';
+@import '~material-design-icons/iconfont/material-icons.css';
 
 body {
   margin: 0;
 }
 
 header {
+  position: relative;
   text-align: center;
   color: white;
-  h1 {
-    font-family: OstrichRegular;
-    margin: 0;
+
+  .header-top {
+    position: relative;
+    padding-top: 10px;
+
+    h1 {
+      font-family: OstrichBold;
+      font-size: 48px;
+      letter-spacing: 2px;
+      margin: 0;
+    }
   }
+  
 }
 
 .delirious-bg {

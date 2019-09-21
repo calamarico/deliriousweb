@@ -29,6 +29,7 @@
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
     "core-js": "^3.2.1",
     "express": "^4.15.2",
+    "material-design-icons": "^3.0.1",
     "rxjs": "^6.5.3",
     "rxjs-compat": "^6.0.0-rc.0",
     "tslib": "^1.10.0",

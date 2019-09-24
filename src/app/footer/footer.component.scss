@@ -41,6 +41,7 @@
   }
 
   .image-logo {
+    outline: none;
     cursor: pointer;
     background-image: url(./img/logo.png);
     height: 199px;
@@ -79,15 +80,18 @@
       margin-bottom: 0;
 
       > li {
-        &:nth-child(2)::before {
-          content: '|';
-          margin-left: 5px;
-          margin-right: 5px;
-        }
+        outline: none;
         cursor: pointer;
         font-size: 15px;
         position: relative;
         display: inline-block;
+
+        &:nth-child(2)::before {
+          content: '|';
+          cursor: default;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
       }
     }
   }
@@ -98,6 +102,7 @@
     width: 100%;
 
     > a {
+      outline: none;
       height: 35px;
       width: 35px;
       background-size: contain;

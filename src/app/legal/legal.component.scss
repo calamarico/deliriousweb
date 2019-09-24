@@ -1,12 +1,18 @@
 .legal {
   text-align: left;
   font-family: OpenSansRegular;
+  background-color: #f2b004;
 
   h1 {
     font-family: Nautilus;
-
+    margin: 0;
+    padding-top: 10px;
   }
   .text-center {
     text-align: center;
+  }
+
+  article {
+    margin-top: 10px;
   }
 }

@@ -1,5 +1,118 @@
+@import './../../assets/_mixins';
+
 .footer {
-  height: 150px;
+  height: 200px;
   width: 100%;
   background-color: grey;
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 auto;
+    height: 100%;
+    width: 586px;
+    padding: 0;
+
+    // 2 columns
+    @include from(888px) {
+      width: 721px;
+    }
+
+    // 3 columns
+    @include from(1244px) {
+      width: 1083px;
+    }
+
+    // 4 columns
+    @include from(1600px) {
+      width: 1444px;
+    }
+
+    .sides {
+      flex: 0 0 20%;
+      margin: auto;
+    }
+
+    > .center {
+      flex: 0 0 60%;
+      margin-top: 48px;
+    }
+  }
+
+  .image-logo {
+    cursor: pointer;
+    background-image: url(./img/logo.png);
+    height: 199px;
+    width: 114px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .legal-list {
+    color: white;
+    text-align: center;
+    font-family: OpenSansRegular;
+    > p {
+      font-size: 14px;
+      font-family: OpenSansLight;
+    }
+  }
+
+  .nav-footer {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  .nav-container {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0;
+
+      > li {
+        &:nth-child(2)::before {
+          content: '|';
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        cursor: pointer;
+        font-size: 15px;
+        position: relative;
+        display: inline-block;
+      }
+    }
+  }
+
+  .social-icons {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    > a {
+      height: 35px;
+      width: 35px;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .instagram {
+      margin-right: 20px;
+      background-image: url(./img/instagram.png);
+      
+    }
+
+    .facebook {
+      background-image: url(./img/facebook.png);
+    }
+  }
 }

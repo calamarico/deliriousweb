@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
 import { LegalComponent } from './legal/legal.component';
+import { CartaComponent } from './carta/carta.component';
 
 export const routes: Routes = [
   {
@@ -12,6 +13,10 @@ export const routes: Routes = [
   {
     path: 'legal',
     component: LegalComponent,
+  },
+  {
+    path: 'carta',
+    component: CartaComponent,
   },
   {
     path: '**',

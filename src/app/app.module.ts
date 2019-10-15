@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { LegalComponent } from './legal/legal.component';
+import { CartaComponent } from './carta/carta.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
     MainComponent,
     FooterComponent,
     LegalComponent,
+    CartaComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

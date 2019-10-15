@@ -1,0 +1,62 @@
+.carta {
+  text-align: left;
+  font-family: OpenSansRegular;
+  background-color: #fafaf2;
+
+  h1 {
+    font-family: Nautilus;
+    font-size: 44px;
+    margin: 0;
+    padding-top: 10px;
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  article {
+    margin: 60px 0;
+
+    h2 {
+      font-size: 36px;
+      font-style: italic;
+      letter-spacing: 0.5pt;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: table;
+        width: 100%;
+
+        .dish {
+          display: table-cell;
+          vertical-align: middle;
+          overflow: hidden;
+          padding-right: 20px;
+          
+          .name {
+            font-size: 16px;
+          }
+
+          .ingredients {
+            font-size: 13px;
+            margin-left: 10px;
+            font-family: OpenSansLight;
+          }
+        }
+
+        .price {
+          float: right;
+          margin-top: 3px;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 2px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

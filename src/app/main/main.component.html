@@ -1,14 +1,30 @@
 <header class="delirious-bg">
+  <div class="phone">
+    <i class="material-icons">local_phone</i>
+    <span class="phone-text">919 12 18 91</span>
+  </div>
+  <div class="whatsapp">
+    <div class="whats-icon"></div>
+    <span class="phone-text">643 93 47 40</span>
+  </div>
   <div class="header-top">
     <!-- <h1>Pizza Delirious</h1> -->
     <!-- <i class="material-icons">visibility</i> -->
     <div class="header-logo"></div>
-    <div class="horizontal-bar"></div>
+    <div class="horizontal-bar">
+      <div>
+        <a [routerLink]="['/carta']">
+          <h3>Nuestra Carta</h3>
+        </a>
+        <a href="#mapa">
+          <h3>¿Dónde estamos?</h3>
+        </a>
+      </div>
+    </div>
   </div>
 </header>
-<section style="height:550px; width:100%; background-color:red"></section>
 <section style="height:250px; width:100%;">
-<iframe
+<iframe id="mapa"
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.857957315143!2d-3.6590686842729876!3d40.43414406250343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f592fb6021d%3A0x3b1174a4f4218343!2sDelirious%20Pizza!5e0!3m2!1ses!2ses!4v1571600134383!5m2!1ses!2ses"
   width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="">
 </iframe>

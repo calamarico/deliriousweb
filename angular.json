@@ -19,7 +19,7 @@
             "assets": [
               "src/assets",
               "src/favicon.ico",
-              "robots.txt"
+              "src/robots.txt"
             ],
             "styles": [
               "src/styles.scss"
